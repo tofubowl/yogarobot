@@ -4,160 +4,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI Yoga Instructor Bot</title>
-    <script src="https://cdn.tailwindcss.com/"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom font for a clean, modern look */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f5f5dc; /* Earthy Beige Background */
-            color: #573f27; /* Rust-colored text for contrast */
+            background-color: #f8fafc; /* Light gray background */
         }
         /* Custom scrollbar for better aesthetics */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #d3bca0; /* Light Beige Scrollbar Track */
+            background: #e2e8f0;
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #8b4513; /* Rust-colored Scrollbar Thumb */
+            background: #94a3b8;
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb:hover {
-            background: #a0522d;
-        }
-        /* Subtle Fade-in Animation for sections */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        /* Using a simple class to apply animation on load */
-        .fade-in-on-load .fade-in-section {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        /* Button Styles */
-        .btn-primary {
-            background-color: #8b4513; /* Rust-colored button */
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: 0.5rem;
-            font-weight: 500;
-            transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-        .btn-primary:hover {
-            background-color: #a0522d;
-            transform: translateY(-1px);
+            background: #64748b;
         }
     </style>
 </head>
-<body class="text-gray-800 antialiased fade-in-on-load">
+<body class="text-gray-800 antialiased">
     <div class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
 
-        <header class="w-full max-w-4xl text-center mb-12 fade-in-section">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-8b4513 leading-tight mb-4 rounded-lg p-2">
+        <header class="w-full max-w-4xl text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-blue-700 leading-tight mb-4 rounded-lg p-2">
                 AI Yoga Instructor Bot
             </h1>
-            <p class="text-lg sm:text-xl text-573f27">
+            <p class="text-lg sm:text-xl text-gray-600">
                 Your Perfect Pose. Perfected by AI.
             </p>
         </header>
 
-        <section class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 flex flex-col lg:flex-row items-center lg:space-x-8 fade-in-section">
+        <section class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 flex flex-col lg:flex-row items-center lg:space-x-8">
             <div class="lg:w-1/2 mb-6 lg:mb-0">
-                <img src="http://googleusercontent.com/image_generation_content/7" alt="AI Yoga Bot Concept" class="rounded-lg shadow-md w-full h-auto object-cover">
+                <img src="https://placehold.co/600x400/e0f2fe/0284c7?text=AI+Yoga+Bot+Concept" alt="AI Yoga Bot Concept" class="rounded-lg shadow-md w-full h-auto object-cover">
             </div>
             <div class="lg:w-1/2 text-center lg:text-left">
-                <h2 class="text-3xl sm:text-4xl font-semibold text-573f27 mb-4">
+                <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-4">
                     Master Every Asana with Intelligent Guidance
                 </h2>
-                <p class="text-base sm:text-lg text-573f27 leading-relaxed">
-                    Achieving consistent, personalized feedback for daily yoga practice.
-                    The AI Yoga Instructor Bot brings expert, real-time correction directly to you, analyzing your posture with unparalleled precision and guiding you to master every move safely and effectively.
+                <p class="text-base sm:text-lg text-gray-700 leading-relaxed">
+                    Struggling to perfect your yoga poses at home? Lack personalized feedback? The AI Yoga Instructor Bot brings expert, real-time correction directly to you, analyzing your posture with unparalleled precision and guiding you to master every move safely and effectively.
                 </p>
-                <a href="#vision" class="mt-6 inline-block btn-primary transform hover:-translate-y-1">
-                    Learn More About Our Vision
+                <a href="#my-story" class="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                    Discover My Journey
                 </a>
             </div>
         </section>
 
-        <section class="w-full max-w-4xl bg-sage-green-50 shadow-lg rounded-xl p-6 sm:p-8 mb-12 fade-in-section" style="background-color: #eceee1;">
+        <section class="w-full max-w-4xl bg-gradient-to-r from-blue-50 to-indigo-50 shadow-lg rounded-xl p-6 sm:p-8 mb-12">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-2xl sm:text-3xl font-semibold text-573f27 mb-4 flex items-center">
-                        <span class="mr-3 text-red-500 text-3xl">&#9888;</span> The Challenge
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <span class="mr-3 text-red-500 text-3xl">&#9888;</span> The Problem
                     </h3>
-                    <ul class="list-disc list-inside text-573f27 text-base sm:text-lg space-y-2">
-                        <li>Achieving consistent, personalized feedback for daily yoga practice.</li>
-                        <li>Risk of subtle incorrect form over time, leading to plateaus or potential strain.</li>
-                        <li>High cost of frequent one-on-one sessions, limiting daily personalized guidance.</li>
-                        <li>Generic apps lack the precision of real-time, adaptive correction.</li>
+                    <ul class="list-disc list-inside text-gray-700 text-base sm:text-lg space-y-2">
+                        <li>Lack of personalized, real-time feedback during home practice.</li>
+                        <li>Risk of incorrect form leading to injury or ineffective training.</li>
+                        <li>High cost and inconvenience of private yoga instructors.</li>
+                        <li>Generic guidance from apps doesn't address individual needs.</li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-2xl sm:text-3xl font-semibold text-573f27 mb-4 flex items-center">
-                        <span class="mr-3 text-green-500 text-3xl">&#10003;</span> Our Complementary Solution
+                    <h3 class="text-2xl sm:text-3xl font-semibold text-gray-900 mb-4 flex items-center">
+                        <span class="mr-3 text-green-500 text-3xl">&#10003;</span> Our Solution
                     </h3>
-                    <ul class="list-disc list-inside text-573f27 text-base sm:text-lg space-y-2">
-                        <li>AI-powered computer vision for precise, real-time pose analysis.</li>
-                        <li>Instant, actionable audio and visual feedback for daily refinement.</li>
-                        <li>Consistent, adaptive guidance that perfectly complements in-person instruction.</li>
-                        <li>Accessible and private practice, bringing expert-level precision to your home.</li>
+                    <ul class="list-disc list-inside text-gray-700 text-base sm:text-lg space-y-2">
+                        <li>AI-powered computer vision for precise pose analysis.</li>
+                        <li>Instant, actionable audio and visual feedback.</li>
+                        <li>Adaptive guidance tailored to your skill level.</li>
+                        <li>Accessible, private, and consistent instruction at home.</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <section class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 fade-in-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-573f27 text-center mb-8">Key Features</h2>
+        <section class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-12">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-center text-gray-900 mb-8">Key Features</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#9200;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Real-time Pose Correction</h3>
-                    <p class="text-573f27">Receive instant, precise feedback on your alignment and form as you practice.</p>
+                <div class="bg-blue-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-blue-600 text-5xl mb-4">&#9200;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Real-time Pose Correction</h3>
+                    <p class="text-gray-700">Receive instant, precise feedback on your alignment and form as you practice.</p>
                 </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#129302;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Personalized Guidance</h3>
-                    <p class="text-573f27">The bot adapts its instruction to your unique body, progress, and skill level.</p>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-green-600 text-5xl mb-4">&#129302;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Personalized Guidance</h3>
+                    <p class="text-gray-700">The bot adapts its instruction to your unique body, progress, and skill level.</p>
                 </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#127911;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Immersive Learning</h3>
-                    <p class="text-573f27">Engage with a responsive and intelligent instructor that feels truly present.</p>
+                <div class="bg-purple-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-purple-600 text-5xl mb-4">&#127911;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Immersive Learning</h3>
+                    <p class="text-gray-700">Engage with a responsive and intelligent instructor that feels truly present.</p>
                 </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#128218;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Comprehensive Pose Library</h3>
-                    <p class="text-573f27">Access a vast library of yoga poses with detailed instructions and modifications.</p>
+                <div class="bg-yellow-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-yellow-600 text-5xl mb-4">&#128218;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Comprehensive Pose Library</h3>
+                    <p class="text-gray-700">Access a vast library of yoga poses with detailed instructions and modifications.</p>
                 </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#128202;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Progress Tracking</h3>
-                    <p class="text-573f27">Monitor your improvement over time with insightful analytics and performance metrics.</p>
+                <div class="bg-red-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-red-600 text-5xl mb-4">&#128202;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Progress Tracking</h3>
+                    <p class="text-gray-700">Monitor your improvement over time with insightful analytics and performance metrics.</p>
                 </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-5xl mb-4">&#128274;</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Safe & Private Practice</h3>
-                    <p class="text-573f27">Practice comfortably in your own space, with no judgment and maximum safety.</p>
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-md flex flex-col items-center text-center">
+                    <span class="text-indigo-600 text-5xl mb-4">&#128274;</span> <h3 class="text-xl font-semibold text-gray-900 mb-2">Safe & Private Practice</h3>
+                    <p class="text-gray-700">Practice comfortably in your own space, with no judgment and maximum safety.</p>
                 </div>
             </div>
         </section>
 
-        <section class="w-full max-w-4xl bg-sage-green-100 shadow-lg rounded-xl p-6 sm:p-8 mb-12 fade-in-section" style="background-color: #f3f1e9;">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-573f27 text-center mb-8">The Tech Behind the Vision</h2>
-            <p class="text-center text-573f27 text-base sm:text-lg mb-8">
+        <section class="w-full max-w-4xl bg-gradient-to-l from-gray-100 to-slate-100 shadow-lg rounded-xl p-6 sm:p-8 mb-12">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-center text-gray-900 mb-8">The Tech Behind the Vision</h2>
+            <p class="text-center text-gray-700 text-base sm:text-lg mb-8">
                 Our AI Yoga Instructor Bot is built on a robust and cutting-edge technology stack, ensuring precision, scalability, and a seamless development experience.
             </p>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
                     <img src="https://placehold.co/60x60/a78bfa/ffffff?text=IS" alt="Isaac Sim Icon" class="rounded-full p-2 bg-purple-200">
                     <div>
-                        <h3 class="text-xl font-semibold text-573f27 mb-1">NVIDIA Isaac Sim</h3>
-                        <p class="text-573f27">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">NVIDIA Isaac Sim</h3>
+                        <p class="text-gray-700">
                             For high-fidelity robotics simulation and realistic environment testing, crucial for refining bot movements and AI training in a virtual space.
                         </p>
                     </div>
@@ -165,8 +133,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
                     <img src="https://placehold.co/60x60/fca5a5/ffffff?text=PT" alt="PyTorch Icon" class="rounded-full p-2 bg-red-200">
                     <div>
-                        <h3 class="text-xl font-semibold text-573f27 mb-1">PyTorch</h3>
-                        <p class="text-573f27">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">PyTorch</h3>
+                        <p class="text-gray-700">
                             The foundation for our advanced AI/ML models, enabling deep learning for precise human pose estimation and behavioral analysis.
                         </p>
                     </div>
@@ -174,8 +142,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
                     <img src="https://placehold.co/60x60/93c5fd/ffffff?text=R2" alt="ROS 2 Icon" class="rounded-full p-2 bg-blue-200">
                     <div>
-                        <h3 class="text-xl font-semibold text-573f27 mb-1">ROS 2 (Robot Operating System 2)</h3>
-                        <p class="text-573f27">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">ROS 2 (Robot Operating System 2)</h3>
+                        <p class="text-gray-700">
                             Provides the robust framework for communication and control, orchestrating interactions between AI, sensors, and robotic actuators.
                         </p>
                     </div>
@@ -183,8 +151,8 @@
                 <div class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-4">
                     <img src="https://placehold.co/60x60/81e6d9/ffffff?text=DC" alt="Docker Icon" class="rounded-full p-2 bg-teal-200">
                     <div>
-                        <h3 class="text-xl font-semibold text-573f27 mb-1">Docker</h3>
-                        <p class="text-573f27">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-1">Docker</h3>
+                        <p class="text-gray-700">
                             Ensures a consistent and reproducible development environment, streamlining setup and deployment across different systems.
                         </p>
                     </div>
@@ -192,62 +160,54 @@
             </div>
         </section>
 
-        <section class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 fade-in-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-573f27 text-center mb-8">Our Vision: The Road Ahead</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center">
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-4xl mb-4 block">💡</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Phase 1: Core AI Development</h3>
-                    <p class="text-573f27 text-sm">Focus on advanced pose estimation models & real-time feedback algorithms using PyTorch.</p>
-                </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-4xl mb-4 block">🤖</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Phase 2: Robotic Integration</h3>
-                    <p class="text-573f27 text-sm">Integrate AI with robotic kinematics via ROS 2 in NVIDIA Isaac Sim.</p>
-                </div>
-                <div class="bg-sage-green-50 p-6 rounded-lg shadow-md" style="background-color: #f0ead6;">
-                    <span class="text-8b4513 text-4xl mb-4 block">✨</span>
-                    <h3 class="text-xl font-semibold text-573f27 mb-2">Phase 3: User Experience Prototyping</h3>
-                    <p class="text-573f27 text-sm">Develop intuitive feedback mechanisms and user interfaces for seamless interaction.</p>
-                </div>
-            </div>
-            <p class="text-center text-573f27 text-base sm:text-lg mt-8">
-                We're committed to continuous innovation and bringing the future of personalized fitness to life.
+        <section id="my-story" class="w-full max-w-4xl bg-gradient-to-r from-purple-50 to-pink-50 shadow-lg rounded-xl p-6 sm:p-8 mb-12 text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">My Story & Passion for AI & Robotics</h2>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                Having graduated last year (2024), my journey has been driven by a profound fascination with Artificial Intelligence and Robotics. I'm particularly captivated by how these fields can solve real-world problems and enhance human capabilities.
             </p>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-4">
+                My approach to learning is hands-on and methodical. I've dedicated significant time to mastering foundational tools like **NVIDIA Isaac Sim** for realistic simulation, **PyTorch** for deep learning model development, **ROS 2** for robust robotics control, and **Docker** for creating consistent development environments. The "Yoga Instructor Bot" project is the culmination of this passion – a practical application of these technologies to create something truly impactful.
+            </p>
+            <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+                I'm here at London Tech Week and the AI Summit to immerse myself in the latest innovations, validate my ideas, and connect with the pioneers shaping the future of AI and embodied intelligence. My ultimate goal is to contribute as a Staff ML Engineer, driving innovation, and to explore entrepreneurial ventures that leverage AI and robotics for positive change.
+            </p>
+            <a href="#contact" class="inline-block bg-purple-600 text-white hover:bg-purple-700 font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                Let's Connect
+            </a>
         </section>
 
-        <section id="vision" class="w-full max-w-4xl bg-8b4513 text-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 text-center fade-in-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold mb-4">My Journey & Call for Collaboration</h2>
+        <section id="vision" class="w-full max-w-4xl bg-blue-700 text-white shadow-xl rounded-xl p-6 sm:p-8 mb-12 text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold mb-4">Join My Journey</h2>
             <p class="text-base sm:text-lg leading-relaxed mb-6">
-                 As a recent graduate, I'm deeply passionate about the intersection of AI and Robotics. The "AI Yoga Instructor Bot" is my ambitious personal project to apply my skills in Isaac Sim, PyTorch, ROS 2, and Docker to a real-world problem. I'm actively seeking to connect with like-minded individuals, especially those with expertise in robotics engineering, computer vision, UX/UI, or sports science, to potentially collaborate and bring this vision to life.
+                This is an ambitious undertaking, and I'm actively seeking passionate individuals to join me. If you're an expert in robotics engineering, computer vision, UX/UI design, or sports science, I'd love to connect! I'm looking to accelerate my path towards a Staff ML Engineer role and explore entrepreneurial opportunities in this exciting field. Let's discuss the future of embodied AI!
             </p>
-            <p class="text-base sm:text-lg leading-relaxed mb-8">
-                I'm looking to accelerate my path towards a Staff ML Engineer role and explore entrepreneurial opportunities in this exciting field. Let's connect and discuss the future of embodied AI!
-            </p>
-            <a href="#contact" class="inline-block btn-primary transform hover:-translate-y-1">
+            <a href="#contact" class="inline-block bg-white text-blue-700 hover:bg-gray-100 font-medium py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
                 Connect With Me
             </a>
         </section>
 
-        <section id="contact" class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 text-center fade-in-section">
-            <h2 class="text-3xl sm:text-4xl font-semibold text-573f27 mb-6">Get In Touch</h2>
-            <p class="text-base sm:text-lg text-573f27 mb-6">
+        <section id="contact" class="w-full max-w-4xl bg-white shadow-xl rounded-xl p-6 sm:p-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-semibold text-gray-900 mb-6">Get In Touch</h2>
+            <p class="text-base sm:text-lg text-gray-700 mb-6">
                 I'd love to discuss the AI Yoga Instructor Bot, AI, robotics, or potential collaborations. Feel free to reach out!
             </p>
             <div class="space-y-4">
                 <p class="text-lg">
-                    <span class="font-semibold">Email:</span> <a href="mailto:your.email@example.com" class="text-8b4513 hover:underline">your.email@example.com</a>
+                    <span class="font-semibold">Website:</span> <a href="https://tofubowl.github.io/yogarobot/" target="_blank" class="text-blue-600 hover:underline">tofubowl.github.io/yogarobot/</a>
                 </p>
                 <p class="text-lg">
-                    <span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="text-8b4513 hover:underline">linkedin.com/in/yourprofile</a>
+                    <span class="font-semibold">GitHub:</span> <a href="https://github.com/tofubowl/yogarobot" target="_blank" class="text-blue-600 hover:underline">github.com/tofubowl/yogarobot</a>
                 </p>
                 <p class="text-lg">
-                    <span class="font-semibold">GitHub:</span> <a href="https://github.com/yourusername/yoga-bot-project" target="_blank" class="text-8b4513 hover:underline">github.com/yourusername/yoga-bot-project</a>
+                    <span class="font-semibold">LinkedIn:</span> <a href="https://linkedin.com/in/jayspage" target="_blank" class="text-blue-600 hover:underline">linkedin.com/in/jayspage</a>
+                </p>
+                <p class="text-lg">
+                    <span class="font-semibold">Phone:</span> <a href="tel:+447490487223" class="text-blue-600 hover:underline">+44 7490 487223</a>
+                </p>
+                <p class="text-lg text-gray-700">
+                    <span class="font-semibold">Location:</span> Based in Preston, UK. Available for immediate relocation to London.
                 </p>
             </div>
-            <p class="text-sm text-gray-500 mt-8">
-                (Remember to replace placeholder emails and URLs with your actual details.)
-            </p>
         </section>
 
     </div>
